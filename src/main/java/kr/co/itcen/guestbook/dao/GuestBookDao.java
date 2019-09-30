@@ -18,7 +18,7 @@ public class GuestBookDao {
 		Connection connection = null;
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");// 2. 연결하기
-			String url = "jdbc:mariadb://192.168.43.192:3306/webdb?characterEncoding=utf8";
+			String url = "jdbc:mariadb://192.168.1.43:3306/webdb?characterEncoding=utf8";
 			connection = DriverManager.getConnection(url, "webdb", "webdb");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Fail to Loading Driver: " + e);
